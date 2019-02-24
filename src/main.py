@@ -22,6 +22,12 @@ def get_circle(cnts):
 if __name__ == "__main__":
     print ("Juggling counter")
 
+    print ('Starting camera...')
+    vs = VideoStream(src=0).start()
+    window_height = vs.frame.shape[0]
+    window_width = vs.frame.shape[1]
+    time.sleep(1.0)
+
     # blue lower and upper bounds
     color_lower = (82, 42, 14)
     color_upper = (139, 244, 255)
@@ -31,18 +37,11 @@ if __name__ == "__main__":
     score = 0
     highscore = 0
     last_score_time = 0
-    score_reset_iterval = 1
+    score_reset_iterval = 2
     last_ball_y = 400
     falling = False
     red_rgb = (0, 0, 255)
     yellow_rgb = (0, 255, 255)
-
-
-    print ('Starting camera...')
-    vs = VideoStream(src=0).start()
-    window_height = vs.frame.shape[0]
-    window_width = vs.frame.shape[1]
-    time.sleep(1.0)
 
     while True:
         frame = vs.read()
