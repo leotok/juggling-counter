@@ -2,7 +2,7 @@
 
 Count how many times you throw your juggling balls in the air!
 
-Stay in front of your webcam, run this program and start juggling. It will count how many times a ball passes one half of the screen height. If you stop for more than 1 second, your score is reset.
+Stay in front of your webcam, run this program and start juggling. It will count how many times a ball passes one half of the screen height. If you stop for more than 1 second, your score resets.
 
 ## Requirements
 
